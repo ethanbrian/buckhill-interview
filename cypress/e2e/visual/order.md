@@ -18,7 +18,7 @@ These test scenarios cover the functionality of a user submitting an order where
 |Set the authentication token in the session storage to ensure the user is authenticated. | It should display an success message upon placing an order | It  displays an error message upon placing an order |
 
 ## Ensure that error message is displayed if a succesful order is not placed
-### Scenario 2: Try and submit an order without being authenticated in this case the bearer token is being used 
+### Scenario 3: Try and submit an order without being authenticated in this case the bearer token is being used 
 
 | Test Step | Expected Result | Actual Result |
 | --- | --- | --- |
