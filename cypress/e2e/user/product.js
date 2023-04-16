@@ -1,6 +1,6 @@
 
-describe('Data', () => {
-    it('should retrieve data using the bearer token and a unique identifier', () => {
+describe('Retrieving a product', () => {
+    it('should retrieve a product using the bearer token and a unique identifier', () => {
    // define the base URL from the Cypress environment configuration
 const baseUrl = Cypress.env('api-url')
 
