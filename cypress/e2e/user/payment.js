@@ -1,6 +1,6 @@
 
 describe('API Endpoint for creating a payment under the users module', () => {
-    it('Admin should create a payment with authentication token', () => {
+    it('User should create a payment with authentication token', () => {
       cy.fixture('payment.json').then(data => {
         cy.request({
           method: 'POST',
