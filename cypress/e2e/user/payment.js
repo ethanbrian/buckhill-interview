@@ -18,7 +18,6 @@ describe('API Endpoint for creating a payment under the users module', () => {
             // Do something with the response
             const uuid  = response.body.data.uuid;
             expect(uuid).to.exist;
-            Cypress.env('brand_uuid', uuid);
             cy.log(uuid);
                // Update the token value in cypress.env.json
           cy.readFile('cypress/fixtures/payment_uuid.json').then(envFile => {
