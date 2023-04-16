@@ -1,0 +1,28 @@
+{
+  "success": 1,
+  "data": {
+    "category_uuid": "dd76c9c6-3574-4741-8eca-1f50d61f426f",
+    "title": "puppy oat meal",
+    "uuid": "7568ef00-5629-4a97-8a34-e353afacaac1",
+    "price": 200,
+    "description": "test",
+    "metadata": {
+      "brand": "african",
+      "image": "kkkfkfkkfk"
+    },
+    "created_at": "2023-04-15T06:48:11.000000Z",
+    "updated_at": "2023-04-15T06:48:11.000000Z",
+    "deleted_at": null,
+    "category": {
+      "uuid": "dd76c9c6-3574-4741-8eca-1f50d61f426f",
+      "title": "puppies",
+      "slug": "puppies",
+      "created_at": "2023-04-15T06:47:33.000000Z",
+      "updated_at": "2023-04-15T06:47:33.000000Z"
+    },
+    "brand": null
+  },
+  "error": null,
+  "errors": [],
+  "extra": []
+}
