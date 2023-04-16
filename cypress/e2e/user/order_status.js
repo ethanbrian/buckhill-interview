@@ -1,6 +1,6 @@
 
-describe('API Endpoint for creating a payment under the users module', () => {
-    it('Admin should create a payment with authentication token', () => {
+describe('API Endpoint for creating an order status under the users module', () => {
+    it('User should create order status with authentication token', () => {
       cy.fixture('order_status_post').then(data => {
         cy.request({
           method: 'POST',
