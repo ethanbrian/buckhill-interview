@@ -22,7 +22,7 @@ These test scenarios cover the functionality of adding a product to cart where t
 | retrieve a  valid product uuid from the product uuid json file in fixtures folder and an invalid bearer token stored in the cypress.env json file after logging in as a user then do a get request  | Product details are not received successfully the error message is unauthorized  | Product details are not received successfully the error message is unauthorized |
 
 ## Adding products in cart
-### Scenario 3: adding products to cart 
+### Scenario 4: adding products to cart 
 | Test Step | Expected Result | Actual Result |
 | --- | --- | --- |
 | set the authentication token in the session storage to ensure the user is authenticated  | The user should be able to view the products   | The user should be able to view the products  |
