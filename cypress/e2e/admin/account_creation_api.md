@@ -22,7 +22,7 @@ These test scenarios cover the functionality of creating an account, logging in 
 | Enter valid email and password | post the bio data in this format set a valid email: userData.email and userData.password from the json file in the fixtures folder |User is logged in successfully | User is logged in successfully |
 | Create a token |cy.writeFile('cypress.env.json', envFile) the data written in the .env file| Token is created successfully and written successfully in the cypress.env.json | Token is created successfully and written successfully in the cypress.env.json |
 
-### Scenario 2: Login with invalid credentials
+### Scenario 2: Login with invalid credentials this is an invalid token
 | Test Step |Test Data| Expected Result | Actual Result |
 | --- | --- | --- |--- |
 | Enter invalid email and password |cy.readFile('cypress.env.json', envFile) read wrong data authtoken the .env file| User is not logged in | User is not logged in |
