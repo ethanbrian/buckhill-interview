@@ -25,7 +25,7 @@ These test scenarios cover the functionality of adding a product to cart where t
 ### Scenario 4: adding products to cart 
 | Test Step |Test Data| Expected Result | Actual Result |
 | --- | --- | --- |--- |
-| set the authentication token in the session storage to ensure the user is authenticated  | The user should be able to view the products   | localStorage.setItem('usertoken', response.body.data.token) as the usertoken and /api/v1/product/${productId} as the product uuid | The user should be able to view the products  |
+| set the authentication token in the session storage to ensure the user is authenticated  | localStorage.setItem('usertoken', response.body.data.token) as the usertoken and /api/v1/product/${productId} as the product uuid  | The user should be able to view the products  when using an api endpoint  | The user is be able to view the products  when using an api endpoint |
 | --- | --- | --- |--- |
 |Navigate to the product  page| The user should be able to view the products and attempt to add product in the cart| localStorage.setItem('usertoken', response.body.data.token) as the usertoken and /api/v1/product/${productId} as the product uuid | The user is not be able to view the products and attempt to add product in the cart under the products page unless they navigate to the main page
 | --- | --- | --- |--- |
