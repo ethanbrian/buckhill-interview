@@ -27,7 +27,7 @@ These test scenarios cover the functionality of creating a brand, logging in wit
 | Verify the error message | Retrieve`Bearer ${Cypress.env('authToken')} which stores the token .env file and the token should be invalid and /api/v1/brand/${uniqueIdentifier} should be retrieved from uuid json file from the fixtures folder  |Response from payload is unauthorized | Response from payload is unauthorized |
 
 ### Scenario 3: Get brand with valid token and invalid uuid added as the query parameters
-| Test Step | Expected Result | Actual Result |
-| --- | --- | --- |
+| Test Step |Test Data| Expected Result | Actual Result |
+| --- | --- | --- |--- |
 | valid token retrieved from .env file and uuid value retrieved from the brand uuid json file|Retrieve`Bearer ${Cypress.env('authToken')} which stores the token .env file and the token should be valid and /api/v1/brand/${uniqueIdentifier} should be retrieved from uuid json file from the fixtures folder set an invalid uuid in json file  | Data is not retrieved | Data is not retrieved |
 | Verify the error message |Retrieve`Bearer ${Cypress.env('authToken')} which stores the token .env file and the token should be valid and /api/v1/brand/${uniqueIdentifier} should be retrieved from uuid json file from the fixtures folder set an invalid uuid in json file  | Response from payload is brand not found | Response from payload is brand not found |
