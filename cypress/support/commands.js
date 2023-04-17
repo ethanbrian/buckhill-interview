@@ -75,7 +75,7 @@ Cypress.Commands.add('login', (email, password) => {
     cy.readFile('cypress.env.json').then(envFile => {
         envFile.userToken = userToken
         cy.writeFile('cypress.env.json', envFile)
-        localStorage.setItem('usertoken', response.body.data.token);
+         localStorage.setItem('usertoken', response.body.data.token);
       })
     
     //   Cypress.env('authToken', authToken);
