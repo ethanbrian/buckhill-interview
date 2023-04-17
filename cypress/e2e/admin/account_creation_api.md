@@ -26,6 +26,6 @@ These test scenarios cover the functionality of creating an account, logging in 
 | Test Step |Test Data| Expected Result | Actual Result |
 | --- | --- | --- |--- |
 | Enter invalid email and password |cy.readFile('cypress.env.json', envFile) read wrong data authtoken the .env file| User is not logged in | User is not logged in |
-| Verify the error message | Error message is displayed | Error message is displayed |
+| Verify the error message |cy.readFile('cypress.env.json', envFile) read wrong data authtoken the .env file| Error message is displayed | Error message is displayed |
 
 
