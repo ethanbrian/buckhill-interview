@@ -1,18 +1,21 @@
 # buckhill-interview
 
 1.Open a terminal or command prompt on your machine.
+
 2.Navigate to the directory where you want to clone the project.
+
 3.Run the following command:
 git clone <repository-url>
-Replace <repository-url> with the URL of the repository that you want to clone.
+
+4.Replace <repository-url> with the URL of the repository that you want to clone.
 for example in this case https://github.com/ethanbrian/buckhill-interview.git
 
-Once the repository is cloned, navigate into the project directory using the following command:
+5Once the repository is cloned, navigate into the project directory using the following command:
 cd <project-directory>
 Replace <project-directory> with the name of the project directory. For example:
 new-cypress
 
-Among the files cloned is the docker file with some instructions to create the image which contain a list of instructions
+6.Among the files cloned is the docker file with some instructions to create the image which contain a list of instructions
 
 Assuming the user does not have an environment set up and is a window user this is what the user will do
 Open the power shell command prompt ensure you run as administrator
