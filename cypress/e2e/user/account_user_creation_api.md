@@ -21,6 +21,6 @@ These test scenarios cover the functionality of creating an account, logging in 
 | Test Step |Test Data| Expected Result | Actual Result |
 | --- | --- | --- |--- |
 | Enter invalid email and password | post the bio data in this format  credentials: userData.email and credentials:userdata.password from the json file in the fixtures folder set an invalid email in the json file in the fixtures folder   | User is not logged in | User is not logged in |
-| Verify the error message | Error message is displayed | Error message is displayed |
+| Verify the error message | post the bio data in this format  credentials: userData.email and credentials:userdata.password from the json file in the fixtures folder set an invalid email in the json file in the fixtures folder   | Error message is displayed | Error message is displayed |
 
 
