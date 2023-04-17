@@ -13,7 +13,7 @@ These test scenarios cover the functionality of creating an account, logging in 
 | Test Step |Test Data| Expected Result | Actual Result |
 | --- | --- | --- |--- |
 | Enter an invalid email address |post the bio data in this format set an invalid email: userData.email from the json file in the fixtures folder| Account is not created | Account is not created |
-| Verify the error message | Error message is displayed | Error message is displayed |
+| Verify the error message |post the bio data in this format set an invalid email: userData.email from the json file in the fixtures folder| Error message is displayed | Error message is displayed |
 
 ## Login with Token Creation
 ### Scenario 1: Login with valid credentials and create a token
