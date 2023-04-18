@@ -11,7 +11,7 @@ These test scenarios cover the functionality of a user submitting an order where
 | Clear the  session storage to ensure the user is not  authenticated |details should be retrieved from a json file in the fixtures folder and passed in a parameter in this format order.data.first_name from the submit order json file in the fixtures folder| It should display an error message upon placing an order | It does display an error message upon placing an order |
 
 ## Ensure that authenticated users can submit any orders
-### Scenario 2: Try and submit an order without being authenticated in this case the bearer token is being used 
+### Scenario 2: Try and submit an order when authenticated in this case the bearer token is being used 
 
 | Test Step |TestData| Expected Result | Actual Result |
 | --- | --- | --- |--- |
