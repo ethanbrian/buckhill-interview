@@ -95,6 +95,77 @@ the fourth route will be getting a product with the token as the query parameter
 docker run -it -v "$pwd":/cypress -t my-cypress-image:1.0.0 --spec cypress/e2e/user/product.js headless
 Product details will be generated and written in the specified json file in the fixtures folder
 
+the fifth route will be getting a product with the token as the query parameter and the uuid from a json file in the fixtures folder  and the user would have to create the product in swagger api to be able to fetch from this route
+docker run -it -v "$pwd":/cypress -t my-cypress-image:1.0.0 --spec cypress/e2e/visual/add_to_cart.js headless
+
+the sixth route will be getting a product with the token as the query parameter and the uuid from a json file in the fixtures folder  and the user would have to create the product in swagger api to be able to fetch from this route
+docker run -it -v "$pwd":/cypress -t my-cypress-image:1.0.0 --spec cypress/e2e/visual/order.js headless
+
+The user can also decide to  the just the application replicate the aboe steps:
+1.Open a terminal or command prompt on your machine.
+
+2.Navigate to the directory where you want to clone the project.
+
+3.Run the following command:
+git clone <repository-url>
+
+4.Replace <repository-url> with the URL of the repository that you want to clone.
+for example in this case https://github.com/ethanbrian/buckhill-interview.git
+
+5.Once the repository is cloned, navigate into the project directory using the following command:
+cd <project-directory>
+Replace <project-directory> with the name of the project directory. For example:
+new-cypress
+
+Run the following command to install the project dependencies:
+npm install
+
+then run the commands in isolation
+In the admin folder 
+npx cypress run --spec cypress/e2e/admin/create-account.js headless
+npx cypress run --spec cypress/e2e/admin/login.js headless
+After this one can run the other crud api endpoints
+npx cypress run --spec cypress/e2e/admin/brand.js headless
+npx cypress run --spec cypress/e2e/admin/get-brand.js headless
+
+In the user's folder
+npx cypress run --spec cypress/e2e/user/create-account.js headless
+npx cypress run --spec cypress/e2e/user/login.js headless
+After this one can run the other crud api endpoints
+npx cypress run --spec cypress/e2e/admin/category.js headless
+npx cypress run --spec cypress/e2e/admin/order_status.js headless
+npx cypress run --spec cypress/e2e/admin/payment.js headless
+Before running this command ensure that you add a product in postman and ensure that product uuid is generated however having a  an invalid product uuid cannot be considered as a test case
+npx cypress run --spec cypress/e2e/admin/product.js headless
+
+In the visual's folder
+npx cypress run --spec cypress/e2e/user/create-account.js headless
+npx cypress run --spec cypress/e2e/user/login.js headless
+Ensure the above commands run to generate a token and store in the env.json file if the user would like to test with invalid token then they can skip the above commands
+npx cypress run --spec cypress/e2e/visual/add_to_cart.js headless
+npx cypress run --spec cypress/e2e/visual/order.js headless
+
+Above are the ways to run the project in both ways.
+There are some key things to note I have categorized my test suites in folders .They are three folders the admin the user and visual
+My test suites mostly revolve around api endpoints test cases.
+Each folder has separate mark down files that have distinct test case scenarios and test cases.
+The commands.js file holds the function that stores the function in the .env json file which is reusable function that can be used in other resources.
+It contains of a fixture folder that holds json file which is used to retrieve and write data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
